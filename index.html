@@ -3,39 +3,92 @@
   <head>
     <style>
       body {
+        background-color:aqua;
+        display:flex;
+        justify-content: center;
         padding-top: 40px;
         padding-bottom: 40px;
+      
       }
-      .banner {
+      
+      .thumbnails {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+
 
       }
       .banner-image {
         width: 128px;
         height: 128px;
+        object-fit: cover;
+        border-radius: 128px;;
       }
 
       .name {
+        color:white;
 
       }
 
-      .social-icons {
+      .social-icons a {
+        color:white;
+        text-decoration: none;
 
       }
-
       .link {
+        background-color: #f9bc60;
+        display: flex;
+        align-items: center;
+}
 
+      .link a {
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        flex-grow: 2;
       }
+
+      .link img {
+        max-width: 200px;
+        border-radius: 120px;
+      }
+
+      * {
+        border: thin green solid;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1
+      }
+      
+      
     </style>
   </head>
   <body>
-    <div class="banner"><img src="profile.jpeg" alt="Hameed Soberu Profile Photo" class="banner-image"></div>
-    <div class="name">Hameed Soberu</div>
-    <div class="social-icons"> <a href="https://www.linkedin.com/in/hameed-soberu-93a02b170/" target="_blank">Linkedin</a></div>
-    <div class="link"> <a href="https://github.com/hameed-s" target="_blank">Github</div>
-    <div class="link"> <img src="super-bowl.jpg">
-      <a target="_blank"
-      href="https://google.com/search?q=super+bowl">Super Bowl 2023</a>
+    <div class="banner">
+      <img src="./thumbnails/profile.jpeg" alt="Hameed Soberu Profile Photo" class="banner-image">
     </div>
-    <div class="link"></div>
+    
+    <div class="name">Hameed Soberu</div>
+
+    <div class="social-icons"> 
+      <a href="https://www.linkedin.com/in/hameed-soberu-93a02b170/" target="_blank">Linkedin</a>
+    </div>
+
+    <div class="link"> 
+      <a href="https://github.com/hameed-s" target="_blank">Github</a>
+    </div>
+
+    <div class="link"> 
+      <img src="./thumbnails/super-bowl.jpg">
+
+      <a target="_blank" href="https://google.com/search?q=super+bowl">Super Bowl 2023</a>
+    </div>
+  
   </body>
 </html>
